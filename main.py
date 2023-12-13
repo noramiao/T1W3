@@ -1,3 +1,5 @@
+from functions import check_stock, add_new_stock, stock_on_hold, return_stock
+
 print ("Welcome to the stock tracker!")
 
 def selection_menu():
@@ -14,13 +16,13 @@ users_selection = ""
 while users_selection!= "5":
     users_selection = selection_menu()
     if (users_selection == "1"):
-        print ("check stock level")
+        check_stock()
     elif (users_selection == "2"):
-        print("add new arrival stock")
+        add_new_stock()
     elif (users_selection == "3"):
-        print ("report stock on hold")
+        stock_on_hold()
     elif (users_selection == "4"):
-        print ("report return stock")
+        return_stock()
     elif (users_selection == "5"):
         continue
     else:
